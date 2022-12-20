@@ -34,26 +34,30 @@ const sakrantiId = document.getElementById('sakrantiId-1')
 const republicId = document.getElementById('republicId-1')
 
 
-christmasId.addEventListener('click',()=>{
+christmasId.addEventListener('click',(e)=>{
+    e.preventDefault()
     document.getElementById('christmasId-2').classList.toggle('d-none')
     countdown("Dec 25, 2022 00:00:00", 'christmasId-2')
 })
 
 
-newYearId.addEventListener('click',()=>{
+newYearId.addEventListener('click',(e)=>{
+    e.preventDefault()
     document.getElementById('newYearId-2').classList.toggle('d-none')
     countdown("Jan 01, 2023 00:00:00", 'newYearId-2')
 })
 
 
-sakrantiId.addEventListener('click',()=>{
+sakrantiId.addEventListener('click',(e)=>{
+    e.preventDefault()
     document.getElementById('sakrantiId-2').classList.toggle('d-none')
 
     countdown("Jan 14, 2023 00:00:00", 'sakrantiId-2')
 })
 
 
-republicId.addEventListener('click',()=>{
+republicId.addEventListener('click',(e)=>{
+    e.preventDefault()
     document.getElementById('republicId-2').classList.toggle('d-none')
 
     countdown("Jan 26, 2023 00:00:00", 'republicId-2')
