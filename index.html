@@ -23,13 +23,20 @@ body{
     background: white;
     padding: 5px 15px;
     border-radius: 4px;
+    width: 30%;
 
+}
+
+@media screen and (max-device-width: 800px) {
+  .class1 {
+    width: 100%;
+}
 }
     </style>
     <title>javascript day7</title>
   </head>
   <body>
-    <div class="container d-flex gap-4 mt-5">
+    <div class="container d-flex gap-4 mt-5  flex-wrap">
       <div class="card" style="width: 25rem">
         <img
           src="https://img.freepik.com/free-vector/merry-christmas-wallpaper-design_79603-2129.jpg"
@@ -106,7 +113,7 @@ body{
     </div>
 
     <div class="container  mt-5 text-center d-flex justify-content-center mb-5">
-        <div class="class1" style="width: 30%;"><h2>Calculator</h2>
+        <div class="class1"><h2>Calculator</h2>
             <div class="class2">
                 <div id = "div1 " style="margin-bottom: 8px;">
                 <input type="text" class="form-control" id = "inpId">
